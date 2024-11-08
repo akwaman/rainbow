@@ -1,2 +1,2 @@
-foobar ist gut!
+Das foobar ist gut!
 
