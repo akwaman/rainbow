@@ -1,4 +1,6 @@
 red is the first color of the rainbow
 orange is the second color of the rainbow
 yellow is the third color of the rainbow
+green is the next color
+
 
