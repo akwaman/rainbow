@@ -8,9 +8,43 @@ config --global user.email "pscheidt@tenstorrent.com"
 init -b <branch_name>  eg. main
 init -b main
 status
+
 add <filename>
-add -A   (add all files in working dir that have changed)
+add -A   (add all files in working dir that have changed - even untracked ones so be careful)
+
 commit -m "change_message"
 
+remove a file from staging area
+git rm --cached <filename>
+git commit --amend	(recommit without need to change message)
+
+git log
+
+branches are just movable pointers to commits
+
+to check which commit is parent of a given commit use:
+cat-file -p <commit_hash>
+
+git branch		(list branches)
+git branch <branchname>	(create a new branch>
+
+HEAD - simply a pointer that tells you which branch you're on
+.git/HEAD has the contents
+  ref: refs/heads/main
+
+git checkout <branchname>	(switch to another branch)
+git switch <branchname>		(switch to another branch - alternate way)
+
+this modifies the contents of HEAD
+
+Two types of merges:
+fast-forward (easy linear)
+three-way (diverging branches)
+
+1. switch to target branch
+   git checkout main
+   git log --all		(if in main branch, see all later commits too)
+2. merge "feature" branch (which is ahead) back into main
+   git merge feature		(fast-forward merge)
 
 
