@@ -1,0 +1,16 @@
+git <command> <arguments>
+
+commands used in the tutorial book (in sequence)
+config --global --list
+config --global user.name "Paul Scheidt"
+config --global user.email "pscheidt@tenstorrent.com"
+
+init -b <branch_name>  eg. main
+init -b main
+status
+add <filename>
+add -A   (add all files in working dir that have changed)
+commit -m "change_message"
+
+
+
